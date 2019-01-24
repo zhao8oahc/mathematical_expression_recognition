@@ -1,15 +1,20 @@
 #-*- encoding: utf-8 -*-
 
-from sklearn.datasets import load_files
-from sklearn.model_selection import train_test_split
-import osimport cv2
-from captcha.image import ImageCaptcha
-import matplotlib.pyplot as plt
+import os
+import cv2
+import pandas as pd
 import numpy as np
 import random
+import matplotlib.pyplot as plt
+
+from sklearn.datasets import load_files
+from sklearn.model_selection import train_test_split
+from captcha.image import ImageCaptcha
 from PIL import Image
 
 
-csv_path = 'Data/train.csv'
+csv_path = 'data/train.csv'
 
 im = array(Image.open('').convert('L'),'f')
+
+df_label = pd.read_csv(csv_path, index_col=0)

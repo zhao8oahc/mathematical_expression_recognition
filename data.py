@@ -5,6 +5,7 @@ import cv2
 import pandas as pd
 import numpy as np
 import random
+import string
 import matplotlib.pyplot as plt
 
 from sklearn.datasets import load_files
@@ -14,7 +15,9 @@ from PIL import Image
 
 
 csv_path = 'data/train.csv'
+df_label = pd.read_csv(csv_path, index_col=0)
+
+symbols = string.digits + '+-*=()'
 
 im = array(Image.open('').convert('L'),'f')
 
-df_label = pd.read_csv(csv_path, index_col=0)

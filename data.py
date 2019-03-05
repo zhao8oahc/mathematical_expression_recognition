@@ -1,4 +1,3 @@
-#!/usr/bin/python
 #-*- encoding: utf-8 -*-
 
 import os
@@ -25,4 +24,4 @@ characters = string.digits + '+-*=()'
 #	def __init__():
 #
 #
-#	def 
+#	def

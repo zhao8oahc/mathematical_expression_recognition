@@ -13,7 +13,7 @@ from captcha.image import ImageCaptcha
 from PIL import Image
 
 
-csv_path = 'data/train/train.csv'
+csv_path = 'data/train.csv'
 df_label = pd.read_csv(csv_path, index_col=0)
 
 characters = string.digits + '+-*=()'
